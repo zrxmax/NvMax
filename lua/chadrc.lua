@@ -5,8 +5,10 @@
 local M = {}
 
 M.ui = {
-	theme = "onedark",
-
+  theme = "bearded-arc",
+  statusline = {
+    separator_style = "round",
+  },
 	-- hl_override = {
 	-- 	Comment = { italic = true },
 	-- 	["@comment"] = { italic = true },
