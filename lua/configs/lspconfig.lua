@@ -1,7 +1,9 @@
--- EXAMPLE 
+-- EXAMPLE
 local on_attach = require("nvchad.configs.lspconfig").on_attach
 local on_init = require("nvchad.configs.lspconfig").on_init
-local capabilities = require("nvchad.configs.lspconfig").capabilities
+-- local capabilities = require("nvchad.configs.lspconfig").capabilities
+
+local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 local lspconfig = require "lspconfig"
 
@@ -32,18 +34,18 @@ lspconfig.pyright.setup {
   on_attach = on_attach,
   on_init = on_init,
   capabilities = capabilities,
-	settings = {
-	    pyright = {
-	      -- Using Ruff's import organizer
-	      disableOrganizeImports = true,
-	    },
-	    python = {
-	      analysis = {
-	        -- Ignore all files for analysis to exclusively use Ruff for linting
-	        ignore = { '*' },
-	        },
-		},
-	},
+  settings = {
+    pyright = {
+      -- Using Ruff's import organizer
+      disableOrganizeImports = true,
+    },
+    python = {
+      analysis = {
+        -- Ignore all files for analysis to exclusively use Ruff for linting
+        ignore = { "*" },
+      },
+    },
+  },
 }
 
 lspconfig.rust_analyzer.setup {
@@ -52,7 +54,7 @@ lspconfig.rust_analyzer.setup {
   capabilities = capabilities,
   -- Server-specific settings. See `:help lspconfig-setup`
   settings = {
-    ['rust-analyzer'] = {},
+    ["rust-analyzer"] = {},
   },
 }
 
@@ -67,11 +69,11 @@ lspconfig.ruff_lsp.setup {
       args = {
         "--select=E,F,UP,N,I,ASYNC,S,PTH",
         "--line-length=79",
-        "--respect-gitignore",  -- Exlude .gitignore matching files 
-        "--target-version=py311"
+        "--respect-gitignore", -- Exlude .gitignore matching files
+        "--target-version=py311",
       },
-    }
-  }
+    },
+  },
 }
 
 -- -- Global mappings.

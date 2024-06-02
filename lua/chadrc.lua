@@ -5,7 +5,7 @@
 local M = {}
 
 M.ui = {
-  theme = "bearded-arc",
+  theme = "catppuccin",
   statusline = {
     separator_style = "round",
   },

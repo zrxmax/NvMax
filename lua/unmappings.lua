@@ -1,4 +1,7 @@
-local unmap = vim.keymap.del
+-- local unmap = vim.keymap.del
+--
+-- unmap("n", "<leader>gt") -- nvchad's telescop git status
+-- unmap("n", "<leader>cm") -- nvchad's telescop git commits
 
 -- unmap({ "s", "i" }, "<Plug>luasnip-jump-prev")
 -- unmap({ "s", "i" }, "<Plug>luasnip-jump-next")
