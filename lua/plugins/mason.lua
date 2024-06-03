@@ -11,6 +11,7 @@ return {
         "pyright",
         "ruff-lsp",
         "mypy",
+        "black",
       },
     },
   },

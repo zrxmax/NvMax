@@ -1,5 +1,7 @@
 require "nvchad.options"
 
+vim.g.virtcolumn_char = "▕" -- char to display the line
+vim.g.virtcolumn_priority = 10 -- priority of extmark
 -- vim.o.cursorlineopt = 'both' -- to enable cursorline!
 
 -- Basic Settings
@@ -18,14 +20,14 @@ require "nvchad.options"
 -- vim.opt.cursorline = true              -- Выделять активную строку где находится курсор
 -- vim.opt.fileformat = "unix"
 vim.opt.listchars = "tab:➝ ,nbsp:+"
-
+-- vim.g.python3_host_prog = $HOME . '/.local/venv/nvim/bin/python'
 -- -- Nvim-Tree
 -- vim.g.loaded_netrw = 1
 -- vim.g.loaded_netrwPlugin = 1
 -- vim.opt.termguicolors = true
 
 -- Scroll
-vim.opt.so = 30                        -- При скролле курсор всегда по центру
+vim.opt.so = 30 -- При скролле курсор всегда по центру
 
 -- -- Search
 -- vim.opt.ignorecase = true              -- Игнорировать регистр при поиске
@@ -38,8 +40,8 @@ vim.opt.so = 30                        -- При скролле курсор в�
 -- vim.opt.mousefocus = true
 
 -- Line Numbers
-vim.opt.number = true                  -- show line numbers
-vim.opt.relativenumber = true          -- show distance to needed line relatively to current line
+vim.opt.number = true -- show line numbers
+vim.opt.relativenumber = true -- show distance to needed line relatively to current line
 -- vim.wo.number = true                   -- show line numbers
 -- vim.wo.relativenumber = true           -- show distance to needed line relatively to current line
 

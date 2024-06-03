@@ -1,3 +1,5 @@
+vim.g.python3_host_prog = "~/env/py/nvim/bin/python3"
+
 vim.g.base46_cache = vim.fn.stdpath "data" .. "/nvchad/base46/"
 vim.g.mapleader = " "
 

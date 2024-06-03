@@ -1,19 +1,16 @@
-local wk = require("which-key")
-
-
+local wk = require "which-key"
 
 wk.register({
   e = "nvimtree focus",
-	g = {
-		name = "git",
-		b = "telescope git branches",
-		c = "telescope git commits",
-		s = "telescope git status",
-	},
+  g = {
+    name = "git",
+    -- b = "telescope git branches",
+    -- c = "telescope git commits",
+    -- s = "telescope git status",
+  },
   f = {
     name = "find / format",
-  }
-
+  },
   -- e = {"Open Diagnostic Window"},
   --
   -- l = {
@@ -43,4 +40,4 @@ wk.register({
   --     s = "Open"
   -- }
   --
-}, {prefix = "<leader>"})
+}, { prefix = "<leader>" })
